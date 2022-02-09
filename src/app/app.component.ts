@@ -1,19 +1,19 @@
 import { Component, ElementRef, EventEmitter, HostBinding, OnInit, Output, ViewChild } from '@angular/core';
-import { IOptions, ISchedule, IWeekOptions } from 'tui-calendar';
+/*import { IOptions, ISchedule, IWeekOptions } from 'tui-calendar';
 import { NgxMatTuiCalendarComponent, LocalDate, CalendarOptions } from 'ngx-mat-tui-calendar';
 
 import { environment } from '../environments/environment';
 import { FormControl } from '@angular/forms';
 
-import { Overlay } from '@angular/cdk/overlay';
-
+import { Overlay } from '@angular/cdk/overlay';*/
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
+/*
   prod = environment.production;
   title = "Angular Material TOAST UI Calendar Demo";
 
@@ -83,6 +83,10 @@ export class AppComponent implements OnInit {
   }
 
   ngAfterViewInit() {
+    if(this.calendarComponent == null) {
+      return
+    }
+
     // put in the initial schedules
     let schedules: ISchedule[] = this.getSomeSchedules();
     console.warn(this.calendarComponent)
@@ -217,7 +221,6 @@ export class AppComponent implements OnInit {
 
     return schedules;
   }
-
-
+*/
 }
 
