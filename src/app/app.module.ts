@@ -14,7 +14,6 @@ import {NgxMatTuiCalendarModule} from 'ngx-mat-tui-calendar';
 import {AppComponent} from './app.component';
 import {MainComponent} from './main/main.component';
 import {RouterModule, Routes} from '@angular/router';
-import {LazyModuleComponent} from './lazy-module/component/lazy-module.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
