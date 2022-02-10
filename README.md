@@ -27,10 +27,6 @@ The top-level `angular.json` and `package.json` files are used for building both
 
 This repo was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.  Angular ^12.2 requires node ^v14.15 (npm ^v6.14).
 
-# Online Demo
-
-https://ngx-mat-tui-calendar-demo.netlify.app/
-
 # UI
 ## Month View
 
