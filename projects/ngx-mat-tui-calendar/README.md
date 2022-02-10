@@ -3,8 +3,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Development Status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) 
-[![GitHub stars](https://img.shields.io/github/stars/ron2015schmitt/ngx-mat-tui-calendar.svg)](https://github.com/ron2015schmitt/ngx-mat-tui-calendar/stargazers)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/ron2015schmitt/ngx-mat-tui-calendar)
+[![GitHub stars](https://img.shields.io/github/stars/prosidney/ngx-mat-tui-calendar.svg)](https://github.com/prosidney/ngx-mat-tui-calendar/stargazers)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/prosidney/ngx-mat-tui-calendar)
 
 [![npm](https://img.shields.io/npm/v/ngx-mat-tui-calendar?label=npm%20package)](https://www.npmjs.com/package/ngx-mat-tui-calendar)
 ![npm downloads](https://img.shields.io/npm/dt/ngx-mat-tui-calendar?label=npm%20downloads)
@@ -71,11 +71,11 @@ Set up an [Angular theme](https://material.angular.io/guide/theming).  For examp
 
 ### Quickstart Repo
 
-A demonstration of the simple usage described above can be found at repo https://github.com/ron2015schmitt/ngx-mat-tui-calendar-quickstart
+A demonstration of the simple usage described above can be found at repo https://github.com/prosidney/ngx-mat-tui-calendar-quickstart
 
 ### Demo Repo
 
-A more extensive demonstration of usage can be found at repo https://github.com/ron2015schmitt/ngx-mat-tui-calendar-demo
+A more extensive demonstration of usage can be found at repo https://github.com/prosidney/ngx-mat-tui-calendar-demo
 
 
 
@@ -134,7 +134,7 @@ export interface CalendarOptions {
 ## Getting started
 
 ```bash
-git clone https://github.com/ron2015schmitt/ngx-mat-tui-calendar
+git clone https://github.com/prosidney/ngx-mat-tui-calendar
 cd ngx-mat-tui-calendar
 npm install --legacy-peer-deps
 ng build  

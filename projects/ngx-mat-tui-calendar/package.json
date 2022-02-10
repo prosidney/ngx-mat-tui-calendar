@@ -18,13 +18,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ron2015schmitt/ngx-mat-tui-calendar.git"
+    "url": "git+https://github.com/prosidney/ngx-mat-tui-calendar.git"
   },
-  "homepage": "https://github.com/ron2015schmitt/ngx-mat-tui-calendar#readme",
+  "homepage": "https://github.com/prosidney/ngx-mat-tui-calendar#readme",
   "main": "src/public.api.js",
   "runkitExampleFilename": "runkit/test.js",
   "bugs": {
-    "url": "https://github.com/ron2015schmitt/ngx-mat-tui-calendar/issues"
+    "url": "https://github.com/prosidney/ngx-mat-tui-calendar/issues"
   },
   "directories": {
     "runkit": "runkit"
