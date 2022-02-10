@@ -1,11 +1,11 @@
 import {Component, HostBinding, OnInit, ViewChild} from '@angular/core';
-import { IOptions, ISchedule, IWeekOptions } from 'tui-calendar';
-import { NgxMatTuiCalendarComponent, LocalDate, CalendarOptions } from 'ngx-mat-tui-calendar';
+import {IOptions, ISchedule, IWeekOptions} from 'tui-calendar';
+import {CalendarOptions, LocalDate, NgxMatTuiCalendarComponent} from 'ngx-mat-tui-calendar';
 
-import { environment } from '../../../environments/environment';
-import { FormControl } from '@angular/forms';
+import {environment} from '../../../environments/environment';
+import {FormControl} from '@angular/forms';
 
-import { Overlay } from '@angular/cdk/overlay';
+import {Overlay} from '@angular/cdk/overlay';
 
 
 @Component({

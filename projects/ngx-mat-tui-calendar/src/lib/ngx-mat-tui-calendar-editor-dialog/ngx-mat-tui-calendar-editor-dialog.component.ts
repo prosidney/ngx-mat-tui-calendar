@@ -1,11 +1,11 @@
-import { Component, ElementRef, HostBinding, Inject, Input, OnInit, ViewChild } from '@angular/core';
-import { FormControl, FormGroup, NgForm, ValidatorFn, Validators } from '@angular/forms';
-import { MatDialogRef, MAT_DIALOG_DATA, MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import {Component, Inject, OnInit} from '@angular/core';
+import {FormControl, FormGroup, NgForm, ValidatorFn, Validators} from '@angular/forms';
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
-import { DateType, default as Calendar, IEventScheduleObject, ISchedule, TZDate } from 'tui-calendar';
+import {ISchedule} from 'tui-calendar';
 
-import { LocalDate } from '../local-date.js';
-import { CalendarEditorOptions } from '../calendar-editor-options';
+import {LocalDate} from '../local-date';
+import {CalendarEditorOptions} from '../calendar-editor-options';
 
 
 @Component({

@@ -15,6 +15,7 @@ import {AppComponent} from './app.component';
 import {MainComponent} from './main/main.component';
 import {RouterModule, Routes} from '@angular/router';
 import {LazyModuleComponent} from './lazy-module/component/lazy-module.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 const routes: Routes = [
@@ -31,17 +32,17 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
-    LazyModuleComponent
+    MainComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
 
     MatIconModule,
     MatToolbarModule,
 
-    NgxMatTuiCalendarModule,
+    NgxMatTuiCalendarModule.forRoot(),
     RouterModule.forRoot(routes)
   ],
   bootstrap: [AppComponent]

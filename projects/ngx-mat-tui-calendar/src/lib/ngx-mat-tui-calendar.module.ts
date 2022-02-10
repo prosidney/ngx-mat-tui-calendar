@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FlexModule, FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, ModuleWithProviders, NgModule} from '@angular/core';
 import { OverlayModule } from '@angular/cdk/overlay';
 
 // Angular Material Design modules
@@ -30,7 +30,6 @@ import { MatTimepickerModule } from 'mat-timepicker';
 
 // collect all of the above modules into an array
 const importedModules = [
-    BrowserAnimationsModule,
     CommonModule,
     FlexLayoutModule,
     FlexModule, 
@@ -63,6 +62,7 @@ const importedModules = [
 import { NgxMatTuiCalendarComponent } from './ngx-mat-tui-calendar.component';
 import { NgxMatTuiCalendarWrapperComponent } from './ngx-mat-tui-calendar-wrapper/ngx-mat-tui-calendar-wrapper.component';
 import { NgxMatTuiCalendarEditorDialogComponent } from './ngx-mat-tui-calendar-editor-dialog/ngx-mat-tui-calendar-editor-dialog.component';
+import {LocalDate} from './local-date';
 
 const projectModules = [
     NgxMatTuiCalendarComponent,
@@ -88,4 +88,11 @@ const projectModules = [
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class NgxMatTuiCalendarModule { }
+export class NgxMatTuiCalendarModule {
+    static forRoot(): ModuleWithProviders<NgxMatTuiCalendarModule> {
+        return {
+            ngModule: NgxMatTuiCalendarModule,
+            providers: [ ]
+        }
+    }
+}

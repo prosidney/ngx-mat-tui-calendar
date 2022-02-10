@@ -1,27 +1,22 @@
-import { Component, ViewChild, OnInit, Output, EventEmitter, Input, OnChanges, SimpleChanges, OnDestroy, ViewEncapsulation, isDevMode } from '@angular/core';
-import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
+import {Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges} from '@angular/core';
+import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 
 import distinctColors from 'distinct-colors';
-import { Color } from "chroma-js";
-import { v4 as uuidv4 } from 'uuid';
+import {Color} from "chroma-js";
+import {v4 as uuidv4} from 'uuid';
 
 import {
-  faCalendarCheck,
-  faCaretSquareLeft,
-  faCaretSquareRight,
-  faTable,
-  faColumns,
-  faList,
-  faListAlt,
-  faForward,
-  faFastBackward,
   faBackward,
+  faCalendarCheck,
   faCaretLeft,
   faCaretRight,
+  faColumns,
+  faForward,
+  faListAlt,
+  faTable,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   default as Calendar,
-  ICalendarInfo,
   IEventDateObject,
   IEventMoreObject,
   IEventObject,
@@ -29,17 +24,18 @@ import {
   IOptions,
   ISchedule,
   ITheme,
-  ITimezone,
   IWeekOptions,
   TEventBeforeCreateSchedule,
   TZDate,
 } from 'tui-calendar';
 
-// project 
-import { LocalDate } from './local-date.js';
-import { NgxMatTuiCalendarEditorDialogComponent } from './ngx-mat-tui-calendar-editor-dialog/ngx-mat-tui-calendar-editor-dialog.component';
-import { CalendarOptions } from './calendar-options';
-import { CalendarEditorOptions } from './calendar-editor-options';
+// project
+import {LocalDate} from './local-date';
+import {
+  NgxMatTuiCalendarEditorDialogComponent
+} from './ngx-mat-tui-calendar-editor-dialog/ngx-mat-tui-calendar-editor-dialog.component';
+import {CalendarOptions} from './calendar-options';
+import {CalendarEditorOptions} from './calendar-editor-options';
 
 @Component({
   selector: 'ngx-mat-tui-calendar',
