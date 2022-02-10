@@ -14,6 +14,7 @@ import {NgxMatTuiCalendarModule} from 'ngx-mat-tui-calendar';
 import {AppComponent} from './app.component';
 import {MainComponent} from './main/main.component';
 import {RouterModule, Routes} from '@angular/router';
+import {LazyModuleComponent} from './lazy-module/component/lazy-module.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MainComponent,
+    LazyModuleComponent
   ],
   imports: [
     BrowserModule,

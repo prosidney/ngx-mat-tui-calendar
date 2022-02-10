@@ -13,7 +13,7 @@ const routes:Routes = [
     RouterModule.forChild(routes)
   ],
   declarations: [
-    LazyModuleComponent
+   // LazyModuleComponent
   ]
 })
 export class LazyModuleModule { }
