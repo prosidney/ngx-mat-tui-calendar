@@ -1,6 +1,6 @@
 {
-  "name": "@prosidney/ngx-mat-tui-calendar",
-  "version": "12.0.1",
+  "name": "ngx-tui-calendar",
+  "version": "12.0.0",
   "author": "prosidney",
   "license": "MIT",
   "description": "Angular Material Design wrapper, supporting theming, for the Toast UI Calendar, suitable for web-based scheduling, events, appointments, and day planner applications.",
@@ -18,13 +18,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prosidney/ngx-mat-tui-calendar.git"
+    "url": "git+https://github.com/prosidney/ngx-tui-calendar.git"
   },
-  "homepage": "https://github.com/prosidney/ngx-mat-tui-calendar#readme",
-  "main": "src/public.api.js",
+  "homepage": "https://github.com/prosidney/ngx-tui-calendar#readme",
+  "main": "src/public-api.js",
   "runkitExampleFilename": "runkit/test.js",
   "bugs": {
-    "url": "https://github.com/prosidney/ngx-mat-tui-calendar/issues"
+    "url": "https://github.com/prosidney/ngx-tui-calendar/issues"
   },
   "directories": {
     "runkit": "runkit"

@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {LazyModuleComponent} from './component/lazy-module.component';
 import {RouterModule, Routes} from '@angular/router';
-import {NgxMatTuiCalendarModule} from '../../../projects/ngx-mat-tui-calendar/src/lib/ngx-mat-tui-calendar.module';
+import {NgxTuiCalendarModule} from 'ngx-tui-calendar';
 
 const routes:Routes = [
   { path: '', component: LazyModuleComponent }
@@ -11,7 +11,7 @@ const routes:Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    NgxMatTuiCalendarModule,
+    NgxTuiCalendarModule,
     RouterModule.forChild(routes)
   ],
   declarations: [

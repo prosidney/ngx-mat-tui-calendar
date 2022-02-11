@@ -8,7 +8,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 // 3rd party modules
-import {NgxMatTuiCalendarModule} from 'ngx-mat-tui-calendar';
+import {NgxTuiCalendarModule} from 'ngx-tui-calendar';
 
 // project modules
 import {AppComponent} from './app.component';
@@ -41,7 +41,7 @@ const routes: Routes = [
     MatIconModule,
     MatToolbarModule,
 
-    NgxMatTuiCalendarModule.forRoot(),
+    NgxTuiCalendarModule.forRoot(),
     RouterModule.forRoot(routes)
   ],
   bootstrap: [AppComponent]

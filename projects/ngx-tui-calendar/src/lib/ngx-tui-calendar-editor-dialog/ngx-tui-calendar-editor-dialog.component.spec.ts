@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxMatTuiCalendarEditorDialogComponent } from './ngx-mat-tui-calendar-editor-dialog.component';
+import { NgxTuiCalendarEditorDialogComponent } from './ngx-tui-calendar-editor-dialog.component';
 
 describe('NgxMatTuiCalendarEditorDialogComponent', () => {
-  let component: NgxMatTuiCalendarEditorDialogComponent;
-  let fixture: ComponentFixture<NgxMatTuiCalendarEditorDialogComponent>;
+  let component: NgxTuiCalendarEditorDialogComponent;
+  let fixture: ComponentFixture<NgxTuiCalendarEditorDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxMatTuiCalendarEditorDialogComponent ]
+      declarations: [ NgxTuiCalendarEditorDialogComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxMatTuiCalendarEditorDialogComponent);
+    fixture = TestBed.createComponent(NgxTuiCalendarEditorDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

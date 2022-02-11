@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxMatTuiCalendarComponent } from './ngx-mat-tui-calendar.component';
+import { NgxTuiCalendarComponent } from './ngx-tui-calendar.component';
 
-describe('NgxMatTuiCalendarComponent', () => {
-  let component: NgxMatTuiCalendarComponent;
-  let fixture: ComponentFixture<NgxMatTuiCalendarComponent>;
+describe('NgxTuiCalendarComponent', () => {
+  let component: NgxTuiCalendarComponent;
+  let fixture: ComponentFixture<NgxTuiCalendarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxMatTuiCalendarComponent ]
+      declarations: [ NgxTuiCalendarComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxMatTuiCalendarComponent);
+    fixture = TestBed.createComponent(NgxTuiCalendarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

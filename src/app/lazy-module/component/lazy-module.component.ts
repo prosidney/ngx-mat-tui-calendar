@@ -1,6 +1,5 @@
 import {Component, HostBinding, OnInit, ViewChild} from '@angular/core';
 import {IOptions, ISchedule, IWeekOptions} from 'tui-calendar';
-import {CalendarOptions, LocalDate, NgxMatTuiCalendarComponent} from 'ngx-mat-tui-calendar';
 
 import {environment} from '../../../environments/environment';
 import {FormControl} from '@angular/forms';
@@ -21,7 +20,7 @@ export class LazyModuleComponent implements OnInit {
     darkMode: boolean = false; // <- initial setting for slider
     toggleControl = new FormControl(this.darkMode);
     @HostBinding() themeClass = '';
-    @ViewChild('matTuiCalendarNgx', { static: true }) calendarComponent: NgxMatTuiCalendarComponent;
+    @ViewChild('matTuiCalendarNgx', { static: true }) calendarComponent: NgxTuiCalendarComponent;
 
     // Initial Options
     // see definition of IOptions for the full list

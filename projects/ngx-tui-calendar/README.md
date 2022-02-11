@@ -52,9 +52,9 @@ which will add `ngx-mat-tui-calendar`, as well as all of its dependencies to you
 
 Next import the module into your app's ```app.module.ts```:
 ```typescript
-import {NgxMatTuiCalendarModule} from 'ngx-mat-tui-calendar';
+import {NgxTuiCalendarModule} from 'ngx-mat-tui-calendar';
 ```
-Then add `NgxMatTuiCalendarModule` to your list of NgModule imports, in ```app.module.ts```
+Then add `NgxTuiCalendarModule` to your list of NgModule imports, in ```app.module.ts```
 
 Insert the following HTML into your app's template file
 ```angular2html

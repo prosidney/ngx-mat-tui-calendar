@@ -9,11 +9,11 @@ import {CalendarEditorOptions} from '../calendar-editor-options';
 
 
 @Component({
-  selector: 'ngx-mat-tui-calendar-editor-dialog',
-  templateUrl: './ngx-mat-tui-calendar-editor-dialog.component.html',
-  styleUrls: ['./ngx-mat-tui-calendar-editor-dialog.component.scss']
+  selector: 'ngx-tui-calendar-editor-dialog',
+  templateUrl: './ngx-tui-calendar-editor-dialog.component.html',
+  styleUrls: ['./ngx-tui-calendar-editor-dialog.component.scss']
 })
-export class NgxMatTuiCalendarEditorDialogComponent implements OnInit {
+export class NgxTuiCalendarEditorDialogComponent implements OnInit {
   private id: string;
   titleStr: string = '';
   locationStr: string = '';
@@ -30,7 +30,7 @@ export class NgxMatTuiCalendarEditorDialogComponent implements OnInit {
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: CalendarEditorOptions,
-    public dialogRef: MatDialogRef<NgxMatTuiCalendarEditorDialogComponent>,
+    public dialogRef: MatDialogRef<NgxTuiCalendarEditorDialogComponent>,
   ) {
     // console.log('NgxMatTuiCalendarEditorDialogComponent.constructor: schedule:', schedule);
 

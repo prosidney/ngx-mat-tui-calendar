@@ -2,8 +2,8 @@
 
 /package-lock.json
 
-/projects/ngx-mat-tui-calendar/node_modules
-/projects/ngx-mat-tui-calendar/package-lock.json
+/projects/ngx-tui-calendar/node_modules
+/projects/ngx-tui-calendar/package-lock.json
 
 
 # compiled output

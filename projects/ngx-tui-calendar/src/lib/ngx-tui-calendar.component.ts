@@ -30,21 +30,21 @@ import {
 } from 'tui-calendar';
 
 // project
-import {LocalDate} from './local-date';
+import {LocalDate} from './local-date.js';
 import {
-  NgxMatTuiCalendarEditorDialogComponent
-} from './ngx-mat-tui-calendar-editor-dialog/ngx-mat-tui-calendar-editor-dialog.component';
+  NgxTuiCalendarEditorDialogComponent
+} from './ngx-tui-calendar-editor-dialog/ngx-tui-calendar-editor-dialog.component';
 import {CalendarOptions} from './calendar-options';
 import {CalendarEditorOptions} from './calendar-editor-options';
 
 @Component({
-  selector: 'ngx-mat-tui-calendar',
-  templateUrl: './ngx-mat-tui-calendar.component.html',
+  selector: 'ngx-tui-calendar',
+  templateUrl: './ngx-tui-calendar.component.html',
   styleUrls: [
-    './ngx-mat-tui-calendar.component.scss'
+    './ngx-tui-calendar.component.scss'
   ],
 })
-export class NgxMatTuiCalendarComponent implements OnInit, OnChanges, OnDestroy {
+export class NgxTuiCalendarComponent implements OnInit, OnChanges, OnDestroy {
   iconToday = faCalendarCheck;
   // iconPrev = faCaretSquareLeft;
   // iconNext = faCaretSquareRight;
@@ -65,6 +65,7 @@ export class NgxMatTuiCalendarComponent implements OnInit, OnChanges, OnDestroy 
   @Output() userDeletedSchedule: EventEmitter<ISchedule> = new EventEmitter();
   @Input() options: CalendarOptions;
   appliedOptions: CalendarOptions; // this is needed for when options is not connected
+
 
   constructor(public dialog: MatDialog) {
     // we slice off the first color since it is gray
@@ -290,7 +291,7 @@ export class NgxMatTuiCalendarComponent implements OnInit, OnChanges, OnDestroy 
     return schedule;
   }
 
-  createSchedules(schedules: ISchedule[]) {
+  createSchedules(schedules: ISchedule[]): ISchedule[]  {
     let newSchedules = [];
     for (let schedule of schedules) {
       newSchedules.push(this.createSchedule(schedule));
@@ -374,7 +375,7 @@ export class NgxMatTuiCalendarComponent implements OnInit, OnChanges, OnDestroy 
     // console.warn(`options: `, this.appliedOptions);
     dialogConfig.data = { schedule, darkMode: this.appliedOptions.darkMode, themeClass: this.appliedOptions.themeClass } as CalendarEditorOptions;
     dialogConfig.autoFocus = true;
-    const dialogRef = this.dialog.open(NgxMatTuiCalendarEditorDialogComponent, dialogConfig);
+    const dialogRef = this.dialog.open(NgxTuiCalendarEditorDialogComponent, dialogConfig);
     // const dialogRef = this.dialog.open(NgxMatTuiCalendarScheduleEditorDialogComponent, {
     //   data: schedule,
     // });

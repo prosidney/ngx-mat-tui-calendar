@@ -1,0 +1,9 @@
+
+
+
+@use 'src/lib/ngx-tui-calendar.component.theme.scss' as ngx-tui-calendar;
+
+
+@mixin theme($theme) {
+  @include ngx-tui-calendar.theme($theme);
+}
