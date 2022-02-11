@@ -5,6 +5,9 @@ import {environment} from '../../../environments/environment';
 import {FormControl} from '@angular/forms';
 
 import {Overlay} from '@angular/cdk/overlay';
+import {CalendarOptions} from '../../../../projects/ngx-tui-calendar/src/lib/calendar-options';
+import {LocalDate} from '../../../../projects/ngx-tui-calendar/src/lib/local-date';
+import {NgxTuiCalendarComponent} from '../../../../projects/ngx-tui-calendar/src/lib/ngx-tui-calendar.component';
 
 
 @Component({

@@ -30,7 +30,7 @@ import {
 } from 'tui-calendar';
 
 // project
-import {LocalDate} from './local-date.js';
+import {LocalDate} from './local-date';
 import {
   NgxTuiCalendarEditorDialogComponent
 } from './ngx-tui-calendar-editor-dialog/ngx-tui-calendar-editor-dialog.component';

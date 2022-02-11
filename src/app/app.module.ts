@@ -7,15 +7,13 @@ import {NgModule} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
-// 3rd party modules
-import {NgxTuiCalendarModule} from 'ngx-tui-calendar';
-
 // project modules
 import {AppComponent} from './app.component';
 import {MainComponent} from './main/main.component';
 import {RouterModule, Routes} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import {NgxTuiCalendarModule} from '../../projects/ngx-tui-calendar/src/lib/ngx-tui-calendar.module';
 
 const routes: Routes = [
   {
